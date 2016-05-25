@@ -9,7 +9,7 @@ Froiday shooner gutter funkun tokhter ous elusium
 TXT
 
 if ($Config{osname} ne 'darwin') {
-    say "Froi-day shooner gutter-funkun tokh-ter ous elusium";
+    say "Sorry, this script only works on Mac OS";
     exit;
 }
 
