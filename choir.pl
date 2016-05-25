@@ -86,13 +86,3 @@ sub min {
     }
     return $min;
 }
-
-sub min_max {
-    my $min = $_[0];
-    my $max = $_[0];
-    for (@_) {
-        if ($_ < $min) { $min = $_; }
-        if ($_ > $max) { $max = $_; }
-    }
-    return ($min, $max);
-}
