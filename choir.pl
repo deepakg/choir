@@ -5,7 +5,7 @@ use 5.14.1;
 use Data::Dumper;
 
 my $text=<<TXT;
-Froiday shauner gotter funken tochter oose elysium
+Froiday shooner gutter funkun tokhter ous elusium
 TXT
 
 if ($Config{osname} ne 'darwin') {
