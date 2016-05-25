@@ -68,7 +68,7 @@ foreach my $voice (@usable_voices) {
     $ffmpeg_opts .= qq|-i "/tmp/$voice.aiff" |;
 }
 
-$ffmpeg_opts .= "-filter_complex amix=inputs=${\($#usable_voices+1)}:duration=longest:dropout_transition=3 /tmp/choir.aiff";
+$ffmpeg_opts .= "-filter_complex amix=inputs=${\($#usable_voices+1)}:duration=longest /tmp/choir.aiff";
 my $command = "$ffmpeg $ffmpeg_opts";
 # say $command;
 if (-f "/tmp/choir.aiff") {
