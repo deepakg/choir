@@ -20,7 +20,7 @@ my @en_voices;
 # get just the english voices
 foreach my $row (@rows) {
     my @columns = split /\s\s+/, $row;
-    push @en_voices, $columns[0] if $columns[1] =~ /\Aen[_|-]/; #for some reason apple uses en-scotland for the scottish voice
+    push @en_voices, $columns[0] if $columns[1] =~ /\Aen_|-/; #for some reason apple uses en-scotland for the scottish voice
 }
 
 # make them sing
