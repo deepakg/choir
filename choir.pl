@@ -8,7 +8,6 @@ my $text=<<TXT;
 Froiday shauner gotter funken tochter oose elysium
 TXT
 
-#Oh my god what is going on here, is it real or not, my brain will burst.
 if ($Config{osname} ne 'darwin') {
     say "Froi-day shooner gutter-funkun tokh-ter ous elusium";
     exit;
